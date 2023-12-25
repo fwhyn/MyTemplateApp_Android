@@ -1,4 +1,4 @@
-package com.fwhyn.epa.ui.main
+package com.fwhyn.mytempapp.main
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
@@ -10,8 +10,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.fwhyn.epa.ui.common.BaseActivity
-import com.fwhyn.epa.ui.theme.EpsonPrintAnywhereTheme
+import com.fwhyn.mytempapp.common.BaseActivity
+import com.fwhyn.mytempapp.theme.MyTemplateAppTheme
 
 class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,9 +20,12 @@ class MainActivity : BaseActivity() {
         val splashScreen = installSplashScreen()
 
         setContent {
-            EpsonPrintAnywhereTheme {
+            MyTemplateAppTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
                     Greeting("Android")
                 }
             }
@@ -41,7 +44,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    EpsonPrintAnywhereTheme {
+    MyTemplateAppTheme {
         Greeting("Android")
     }
 }

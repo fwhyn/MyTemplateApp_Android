@@ -1,4 +1,4 @@
-package com.fwhyn.epa.ui.common
+package com.fwhyn.mytempapp.common
 
 import android.os.Bundle
 import androidx.annotation.IdRes

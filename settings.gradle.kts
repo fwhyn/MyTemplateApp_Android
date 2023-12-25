@@ -13,7 +13,7 @@ pluginManagement {
 //    }
 //}
 
-rootProject.name = "Epson Print Anywhere"
+rootProject.name = "My Template App"
 include(":app")
 include(":data")
 include(":domain")

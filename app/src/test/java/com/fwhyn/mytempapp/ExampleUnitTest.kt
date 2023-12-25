@@ -1,4 +1,4 @@
-package com.fwhyn.epa
+package com.fwhyn.mytempapp
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

@@ -1,4 +1,4 @@
-package com.fwhyn.epa.ui.common
+package com.fwhyn.mytempapp.common
 
 import androidx.activity.ComponentActivity
 

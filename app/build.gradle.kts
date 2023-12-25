@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    val moduleName = "com.fwhyn.epa"
+    val moduleName = "com.fwhyn.mytempapp"
 
     val lSdk: Int by rootProject.extra
     val mSdk: Int by rootProject.extra

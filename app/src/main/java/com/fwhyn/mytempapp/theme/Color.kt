@@ -1,4 +1,4 @@
-package com.fwhyn.epa.ui.theme
+package com.fwhyn.mytempapp.theme
 
 import androidx.compose.ui.graphics.Color
 
