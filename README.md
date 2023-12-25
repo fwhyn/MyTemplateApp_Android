@@ -1,1 +1,1 @@
-# EpsonPrintAnywhere_Android
+# MyTemplateApp_Android
