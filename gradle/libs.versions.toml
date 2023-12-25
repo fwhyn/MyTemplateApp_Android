@@ -1,0 +1,81 @@
+# ----------------------------------------------------------------------------------------------------------------------
+[versions]
+# ----------------------------------------------------------------
+# Main
+androidxActivity = "1.8.0"
+androidxFragment = "1.6.2"
+androidxCore = "1.0.1"
+
+# Coroutine
+orgJetbrainsKotlinx = "1.6.4"
+
+# Compose
+androidxComposeBom = "2023.03.00"
+
+# Plugin
+androidGradlePlugin = "8.1.2"
+
+# ----------------------------------------------------------------
+# Test
+junitVersion = "4.13.2"
+androidxTestExt = "1.1.5"
+androidxTestEspresso = "3.5.1"
+
+# ----------------------------------------------------------------------------------------------------------------------
+[libraries]
+# ----------------------------------------------------------------
+# Main
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidxFragment" }
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCore" }
+
+# Coroutine
+org-jetbrains-kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "orgJetbrainsKotlinx" }
+
+# Compose
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# ----------------------------------------------------------------
+# Test
+junit = { group = "junit", name = "junit", version.ref = "junitVersion" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxTestExt" }
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxTestEspresso" }
+
+# Compose
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+
+# ----------------------------------------------------------------------------------------------------------------------
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+
+
+
+
+# ----------------------------------------------------------------------------------------------------------------------
+[bundles]
+# ----------------------------------------------------------------
+# Main
+androidx-compose = [
+    "androidx-activity-compose",
+    "androidx-compose-ui",
+    "androidx-compose-ui-graphics",
+    "androidx-compose-ui-tooling-preview",
+    "androidx-compose-material3"
+]
+
+# ----------------------------------------------------------------
+#Test
+androidx-compose-androidtest = [
+    "androidx-compose-ui-test-junit4"
+]
+androidx-compose-debugtest = [
+    "androidx-compose-ui-tooling",
+    "androidx-compose-ui-test-manifest"
+]
