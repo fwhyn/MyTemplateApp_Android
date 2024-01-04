@@ -63,6 +63,7 @@ dependencies {
     // Main
     implementation(libs.androidx.core.splashscreen)
     implementation(libs.androidx.fragment.ktx)
+    implementation(libs.io.github.fwhyn.library.fad)
 
     // Compose
     implementation(platform(libs.androidx.compose.bom))

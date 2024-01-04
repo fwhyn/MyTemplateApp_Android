@@ -5,6 +5,7 @@
 androidxActivity = "1.8.0"
 androidxFragment = "1.6.2"
 androidxCore = "1.0.1"
+fadVersion = "1.0.0"
 
 # Coroutine
 orgJetbrainsKotlinx = "1.6.4"
@@ -29,6 +30,7 @@ androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", ve
 androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCore" }
 
 # Coroutine
+io-github-fwhyn-library-fad = { group = "io.github.fwhyn.library", name = "fad", version.ref = "fadVersion" }
 org-jetbrains-kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "orgJetbrainsKotlinx" }
 
 # Compose
